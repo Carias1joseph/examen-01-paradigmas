@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export const HomePage = () => {
   return (
-    <div className="p-6 text-center">
+    <div className="p-6 m-4 text-center">
       <h1 className="text-3xl font-bold text-red-600 mb-8">
         Bienvenido a GameStore
       </h1>

@@ -17,9 +17,11 @@ export const Navbar= () => {
 
         {/*links */}
         <div className="hidden md:flex gap-6">
+
           <Link to="/" className="hover:text-red-200">
             Inicio
           </Link>
+
           <Link to="/catalog" className="hover:text-red-200">
             Catálogo
           </Link>
@@ -38,14 +40,13 @@ export const Navbar= () => {
       {/* Menu Mobile */}
       {isMenuOpen && (
         <div className="md:hidden flex flex-col gap-2 mt-2">
+
           <Link to="/" className="hover:text-red-200" onClick={toggleMenu}>
             Inicio
           </Link>
-          <Link
-            to="/catalog"
-            className="hover:text-red-200"
-            onClick={toggleMenu}
-          >
+
+          <Link to="/catalog" className="hover:text-red-200"
+            onClick={toggleMenu}>
             Catálogo
           </Link>
         </div>

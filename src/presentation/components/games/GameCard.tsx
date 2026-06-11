@@ -1,4 +1,3 @@
-import React from "react";
 import GameBadge from "./GameBadge";
 
 interface Props {
@@ -11,7 +10,8 @@ interface Props {
 
 export const GameCard = ({ title, genre, price, available, icon }: Props) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
+
+    <div className="bg-white rounded-lg shadow-md p-5">
       {icon && <div className="mb-2">{icon}</div>}
       <h2 className="font-bold text-gray-900">{title}</h2>
       <p className="text-gray-500 text-sm">{genre}</p>
@@ -20,7 +20,8 @@ export const GameCard = ({ title, genre, price, available, icon }: Props) => {
         {available ? (
           <GameBadge label="Disponible" color="bg-green-500" />
         ) : (
-          <GameBadge label="Agotado" color="bg-red-500" />
+          <GameBadge label="Agotado" color="bg-gray-500" />
+
         )}
       </div>
     </div>

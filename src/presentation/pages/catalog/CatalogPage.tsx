@@ -29,7 +29,7 @@ export const CatalogPage = () => {
 
         <GameCard
           title="Minecraft"
-          genre="Sandbox"
+          genre="Creativo"
           price={29.99}
           available={true}
           icon={<span><Diamond size={30}/></span>}
